@@ -1,5 +1,5 @@
 # print statement
-"prin statement2"
+#"prin statement2"
 print ("hello my friend")
 print ("aaa")
 print("123")
