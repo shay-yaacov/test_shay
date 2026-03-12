@@ -1,2 +1,2 @@
-print"hello shay")
+print ("hello shay")
 print ("aaa")
