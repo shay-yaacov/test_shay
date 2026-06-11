@@ -12,9 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                python3 -m venv .venv
-                . .venv/bin/activate
-                pip install -r requirements.txt
+                pip install -r requirements.txt --break-system-packages
                 '''
             }
         }
@@ -22,7 +20,6 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                . .venv/bin/activate
                 python3 hellow.py
                 '''
             }
