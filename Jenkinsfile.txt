@@ -26,7 +26,7 @@ pipeline {
                 cd .
                 . .venv/bin/activate
                 python3 hellow.py
-                python3 hellow2.py --name=Brad
+               # python3 hellow2.py --name=Brad
                 '''
             }
         }
