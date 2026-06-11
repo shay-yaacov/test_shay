@@ -11,3 +11,4 @@ RUN apt-get update && apt-get install -y docker-ce-cli
 RUN pip3 install --break-system-packages pytest requests
 USER jenkins
 RUN jenkins-plugin-cli --plugins "blueocean docker-workflow"
+
