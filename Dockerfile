@@ -6,7 +6,6 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-venv \
     python3-full \
-    python3.13-venv \
     lsb-release \
     wget
 
