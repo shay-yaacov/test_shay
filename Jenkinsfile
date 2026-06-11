@@ -11,25 +11,25 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''
-                pip install -r requirements.txt --break-system-packages
+                bat '''
+                pip install -r requirements.txt
                 '''
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh '''
-                python3 hellow.py
-                python3 hellow2.py --name=Shay
+                bat '''
+                python hellow.py
+                python hellow2.py --name=Shay
                 '''
             }
         }
         stage('Deliver') {
             steps {
                 echo 'Deliver....'
-                sh '''
-                echo "doing delivery stuff.."
+                bat '''
+                echo doing delivery stuff..
                 '''
             }
         }
